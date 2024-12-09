@@ -2,8 +2,14 @@
 
 
 # usage
-
+```
+# prerequisite
+mkdir /root/da/data # or replace it with your dir 
+export ES=true
+```
 To start all processes, just run `just up`.
+> If you encountered errors with `founry` and `upgrade-semgrep`, please run:
+> `cd optimism; just upgrade-semgrep ; just update-foundry`, then rerun `just up`
  
 If anything goes wrong, it'll stop immediately, indicating the exact line that's triggering it.
 
